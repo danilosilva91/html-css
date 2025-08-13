@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grouping tags</title>
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: rgb(61, 58, 58);
+            margin: 0px;
+        }
+        header {
+            background-color: white;
+            padding: 10px;
+            margin: 10px;
+        }
+        header > h1 {
+            text-align: center;
+        
+        }
+        main{
+            
+            background-color: white;
+            padding: 10px ;
+            margin: 10px;
+            border-radius: 20px;
+            box-shadow: 3px 3px 3px #000000a3;
+        }
+        footer{
+            background-color: black;
+            color: white;
+            text-align: center;
+            padding: 3px;
+            margin: 0px;  
+        }
+        footer > p {
+            margin: 0px;
+        }
+        article{
+            background-color: lightgrey;
+        }
+        article > aside {
+            background-color: #969090;
+            text-align: right;
+            color: rgb(139, 37, 6);
+        }
+        nav {
+            background-color: #817b7b;
+            padding: 10px;
+            margin: 10px;
+             box-shadow: 3px 3px 5px #4f4d4d;
+           
+        }
+        nav > a {
+            text-decoration: none;
+            color: white;
+            font-weight: bold;
+            margin-right: 30px;
+        }
+        nav > a:hover {
+            text-decoration: underline;
+        }
+        div#bola {
+            height: 100px;
+            width: 100px;
+            background-color: white;
+            margin: 10px;
+            border-radius: 50%;
+
+        }
+
+    </style>
+ 
+</head>
+<body>
+    <!-- O gruping tags você faz a formatação SEMANTICA, com significado. Ao contrário das versoes anteriores de html, que usavam apenas a tag <div> para classificar os assuntos. segue alguns exemplos de tags semanticas:
+
+    header  = cabeçario
+    main    = conteúdo principal
+    footer  = rodapé
+    nav     = navegação
+    section = seção
+    article = artigos
+    aside   = conteúdo relativo ao artigo
+    -->
+    <header>
+            <h1>Meu Site</h1>
+            <nav>
+                <a href="#">Link</a>
+                <a href="#">Link</a>
+                <a href="#">Link</a>
+                <a href="#">Link</a>
+                <a href="#">Link</a>
+            </nav>
+    </header>
+    <main>
+        <section id="assuntos">
+           
+           esportes Política Tecnologia
+            
+
+        </section>
+        <section id="noticias">
+            <article>
+                <h2>Notícia sobre o Brasil</h2>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ut corporis atque eligendi illum molestias placeat, sit ratione, sequi omnis explicabo quaerat itaque tempore! Consequatur alias accusamus voluptates adipisci odit molestiae?</p>
+                <aside>
+                    artigo escrito por DanSilva
+                </aside>
+            </article>
+        </section>
+    
+    </main>
+    <footer>
+        <p>Desenvolvido por Danilo Silva</p>
+    </footer>
+    <div id="bola">
+    </div>
+</body>
+</html>
